@@ -1,0 +1,132 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+  <style>
+  li {
+   display: inline;
+   font-size: 22px;
+   padding: 20px;
+   font-weight: bold;
+   font-style: oblique;
+   margin-top: 10px;
+  }
+  .ho {
+    margin-left: 650px;
+  }
+  footer {
+    color: black;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: -60px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+  }
+  body {
+    font-family: Times New Roman;
+  }
+  * {box-sizing: border-box;}
+
+  input[type=text], select,textarea, input[type=tel] {
+    width: 35%;
+    padding:9px;
+    border: 1px solid purple;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow:5px 8px purple;
+  }
+  input[type=submit] {
+  background-color: #4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Times;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+h2 {
+  font-family: Times New Roman;
+  margin-left: 250px;
+}
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 100px;
+}
+  html {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg);
+    background-size: 35% 70%;
+    background-repeat: no-repeat;
+    background-position: 750px;
+  }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="ho"> <a href="index.html"
+    id="Homelink">Home</a> </li>
+    <li> <a href="mystory.html"
+    id="Aboutlink">About</a> </li>
+    <li><a href="Links.html"
+    id="Linkslink">Links</a> </li>
+    <li> <a href="Resume.html"
+    id="Resumelink">Resume</a> </li>
+    <li> <a href="Gallery.html"
+    id="Gallery">Gallery</a> </li>
+    <li> <a href="Contacts.html"
+    id="Contctslink">Contacts</a> </li>
+  </ul>
+
+    <h2>Contact Me</h2>
+    <div class="container">
+      <form method="POST" action="https://formspree.io/selinabelay@gmail.com">
+
+        <label for="fname">First Name</label> <br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+
+        <label for="lname">Last Name</label> <br>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..."> <br>
+
+        <label for="Email">Email</label> <br>
+        <input type="text" id="Email" name="_replyto" placeholder="Your email adress..."><br>
+
+        <label for="PN">Phone Number (optional)</label> <br>
+        <select id="PN" name="PN">
+          <option value="home phone">Home</option>
+          <option value="cell phone">Cell</option>
+        </select> <br>
+        <input type="tel" id="PN" name="Phone Number" placeholder="Your number..."><br>
+
+        <label for="country">Country</label> <br>
+        <select id="country" name="country">
+          <option value="africa">Africa</option>
+          <option value="australia">Australia</option>
+          <option value="asia">Asia</option>
+          <option value="canada">Canada</option>
+          <option value="europe">Europe</option>
+          <option value="usa">USA</option>
+        </select> <br>
+
+        <label for="subject">Subject</label> <br>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:95px"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  <footer>
+  <em><strong>Selinas &copy 2019 All right reserved.</em></strong>
+  </footer>
+</body>
+</html>
